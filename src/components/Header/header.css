@@ -69,7 +69,7 @@ ul{
     animation: menu 1s ease-in forwards;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     background-color: var(--color-back0);
     & .li-navigation-mobile{
