@@ -43,7 +43,7 @@ ul{
   width: 30px;
   height: 7px;
   border: none;
-  border-top: 2px solid var(--color-text1);
+  border-top: 2px solid #fff;
   background-color: transparent;
   outline: none;
   position: relative;
@@ -55,7 +55,7 @@ ul{
     margin-top: 5px;
     width: 100%;
     height: 2px;
-    background-color: var(--color-text1);
+    background-color: #fff;
   }
 }
 #nav.active{
