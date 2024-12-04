@@ -9,15 +9,19 @@ function Footer(){
         <button>email</button>
         <button>324849838928383</button>
       </section>
-      <section className='redes'>
+      <section className='redes-sociais'>
         <p>SOCIAL</p> 
         <div className='social'>
           <a href="#">instagram</a>
           <a href="#">Linkedin</a>
         </div>
         <hr />
+        <div className='especification'>
+          <p>VERÇÃO</p>
+          <p>AGRADECIMENTOS</p>
+        </div>
         <div className='direitos'>
-          <p>&copy2004</p>
+          <p>&copy2004 Edition</p>
           <p>OBRIGADO</p>
         </div>
       </section>

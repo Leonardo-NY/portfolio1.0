@@ -1,9 +1,57 @@
 footer{
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--color-back0);
   color: #fff;
   display: flex;
-  padding: 0 5%;
-  justify-content: center;
+  padding: 5% 5%;
+  justify-content: space-between;
   flex-direction: column;
+}
+.contato{
+  display: flex;
+  flex-direction: column;
+  & h2{
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+  & hr{
+    margin: 50px 0 100px;
+  }
+  & button{
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid var(--color-secundaria);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+}
+.redes-sociais{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  & p{
+    color: var(--color-secundaria);
+    font-size: 11px;
+    font-weight: bold;
+  }
+  & .social{
+    display: flex;
+    gap: 20px;
+  }
+  & .especification{
+    display: flex;
+    justify-content: space-between;
+  }
+  & .direitos{
+    display: flex;
+    justify-content: space-between;
+    & p{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
 }
