@@ -10,6 +10,11 @@ header{
   align-items: center;
   z-index: 999;
 }
+#logo{
+  animation: logo-remuve 1s ease-in forwards;
+  animation-timeline: scroll();
+  animation-range: cover 0% cover 20%;
+}
 #nav{
   display: flex;
   position: relative;
@@ -68,11 +73,11 @@ ul{
   &::before{
     content: '';
     position: absolute;
-    animation: menu-scrool 1s forwards;
+    animation: menu-scrool 1s ease-in forwards;
     border-radius: 50%;
     translate: -.5px 2px;
     animation-timeline: scroll();
-    animation-range: cover 0% cover 40%;
+    animation-range: cover 0% cover 20%;
   }
 }
 #menu{
@@ -151,9 +156,15 @@ ul{
 }
 @keyframes menu-scrool{
   to{
-    background-color: var(--color-mark);
+    background-color: var(--color-back0);
     animation: back-menu .5s ease-in forwards;
+    border: 1px solid var(--color-secundaria);
     height: 200%;
     width: 200%;
+  }
+}
+@keyframes logo-remuve{
+  to{
+    opacity: 0;
   }
 }

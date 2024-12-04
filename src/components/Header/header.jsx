@@ -7,7 +7,7 @@ function Header(){
   return(
     <>
     <header>
-      <div>logo</div>
+      <div id='logo'>logo</div>
       <nav id='nav'>
         <ul>
           <li className='li-navigation-mobile'>
