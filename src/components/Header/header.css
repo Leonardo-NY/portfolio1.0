@@ -64,6 +64,16 @@ ul{
   align-items: center;
   background-image: none;
   animation: back-menu-remuve .5s ease-in forwards;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    animation: menu-scrool 1s forwards;
+    border-radius: 50%;
+    translate: -.5px 2px;
+    animation-timeline: scroll();
+    animation-range: cover 0% cover 40%;
+  }
 }
 #menu{
   cursor: pointer;
@@ -94,6 +104,9 @@ ul{
     animation: back-menu .5s ease-in forwards;
     height: 60px;
     width: 60px;
+    &::before{
+      display: none;
+    }
     & #menu{
       transition: .5s;
       rotate: 135deg;
@@ -134,5 +147,13 @@ ul{
     background-color: transparent;
     height: 30px;
     width: 30px;
+  }
+}
+@keyframes menu-scrool{
+  to{
+    background-color: var(--color-mark);
+    animation: back-menu .5s ease-in forwards;
+    height: 200%;
+    width: 200%;
   }
 }
