@@ -10,21 +10,21 @@ function Header(){
       <div>logo</div>
       <nav id='nav'>
         <ul>
-          <div className='naso'>
+          <li className='li-navigation-mobile'>
             <p>NAVEGAÇÃO</p>
             <hr />
-          </div>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">sobre</a></li>
-          <li><a href="#">Contato</a></li>
-          <div className='naso'>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </li>
+          <li className='navigtion-mobile-social'>
             <hr />
             <p>SOCIAL</p>
             <div className='social'>
               <a href="#">instagram</a>
               <a href="#">Linkedin</a>
             </div>
-          </div>
+          </li>
         </ul>
         <div onClick={menu} className='areaBtn'>
           <button id='menu'></button>
