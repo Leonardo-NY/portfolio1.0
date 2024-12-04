@@ -1,0 +1,81 @@
+/* AREA FOOTER */
+footer{
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 150px;
+  padding-inline: 5%;
+  background-color: var(--color-back0) ;
+  color: var(--color-text0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    transform: scaleY(1.4);
+    width: 110%;
+    border-radius: 0 0 50% 50%;
+    left: -5%;
+    top: 0;
+    background-color: var(--color-main1);
+  }
+  & .contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    & h2{
+      font-size: 2.5em;
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+    & hr{
+      margin-bottom: 120px;
+      margin-top: 20px;
+      border: 1px solid #494A4D;
+    }
+    & button{
+      background-color: transparent;
+      border: 1px solid #494A4D;
+      padding: 20px;
+      border-radius: 50px;
+      margin: 5px 0;
+      color: var(--color-text0);
+      font-size: 17px;
+    }
+  }
+  & .redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & p{
+      color: #494A4D;
+    }
+    & .social{
+      display: flex;
+      gap: 20px;
+      & a{
+        color: var(--color-text0);
+        text-decoration: none;
+      }
+    }
+    & hr{
+      margin: 15px 0 0;
+      border: 1px solid #494A4D;
+    }
+    & .direitos{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      & p{
+        color: var(--color-text0);
+        font-size: 11px;
+        font-weight: 600;
+      }
+    }
+  }
+
+}

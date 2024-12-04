@@ -1,0 +1,155 @@
+/* AREA HEADER */
+header{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  z-index: 999;
+}
+#nav{
+  display: flex;
+  position: relative;
+}
+ul{
+  display: none;
+  gap: 30px;
+  overflow: hidden;
+  transition: 1s;
+  right: -100%;
+  & li{
+    list-style: none;
+  }
+}
+.areaBtn{
+  cursor: pointer;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  background-image: none;
+  animation: back-menu-remuve .5s ease-in forwards;
+  transition: 1s;
+}
+#menu{
+  cursor: pointer;
+  z-index: 6;
+  width: 30px;
+  height: 7px;
+  border: none;
+  border-top: 2px solid var(--color-text1);
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  transition: .4s;
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text1);
+  }
+}
+#nav.active{
+  & ul{
+    display: flex;
+    position: fixed;
+    z-index: 8;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    animation: menu 1s ease-in forwards;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2c2c2e;
+    & p{
+      font-size: 13px;
+      font-weight: 500;
+    }
+    & .naso{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 40px 0;
+      & .social{
+        display: flex;
+        gap: 30px;
+      }
+    }
+    
+    & li a{
+      font-size: 2em;
+      font-weight: 600;
+    }
+  }
+  & .areaBtn{
+    background-color: var(--color-mark);
+    animation: back-menu .5s ease-in forwards;
+    & #menu{
+      transition: .5s;
+      rotate: 135deg;
+      translate: -1px -1px;
+      &::after{
+        rotate: -450deg;
+        translate: 0 -10px;
+      }
+    }
+  }
+}
+/* ANIMAÇÕES */
+@keyframes back-menu{
+  from {
+    scale: .4;
+    border-radius: 50%;
+  }
+  to{
+    border-radius: 50%;
+    scale: 1;
+  }
+}
+@keyframes back-menu-remuve{
+  0%{
+    background-color: var(--color-mark);
+    border-radius: 50%;
+    scale: 1;
+  }
+  60%{
+    border-radius: 50%;
+    background-color: transparent;
+    scale: .7;
+  }
+  to{
+    border-radius: 50%;
+    background-color: transparent;
+    scale: 1;
+  }
+}
+@keyframes menu {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+@keyframes menu-remuve {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(200%);
+  }
+}
