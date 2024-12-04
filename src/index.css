@@ -31,3 +31,6 @@ hr{
   height: .5px;
   background-color: var(--color-secundaria);
 }
+li{
+  list-style: none;
+}
