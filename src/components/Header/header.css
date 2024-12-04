@@ -110,7 +110,7 @@ ul{
     & #menu{
       transition: .5s;
       rotate: 135deg;
-      translate: -1px -1px;
+      translate: -1.5px -1.5px;
       &::after{
         rotate: -450deg;
         translate: 0 -10px;
