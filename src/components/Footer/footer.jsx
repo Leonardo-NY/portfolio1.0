@@ -5,7 +5,7 @@ function Footer(){
     <footer>
       <section className='contato'>
         <h2>Vamos trabalhar juntos</h2>
-        <hr />
+        <hr id='bolinha'/>
         <button>email</button>
         <button>324849838928383</button>
       </section>

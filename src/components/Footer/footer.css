@@ -6,6 +6,9 @@ footer{
   padding: 5% 5%;
   justify-content: space-between;
   flex-direction: column;
+  padding-top: 15%;
+  position: relative;
+  overflow: hidden;
 }
 .contato{
   display: flex;
@@ -16,6 +19,21 @@ footer{
   }
   & hr{
     margin: 50px 0 100px;
+    position: relative;
+  }
+  & #bolinha{
+    position: relative;
+    overflow: visible;
+    &::after{
+      content: '';
+      position: absolute;
+      background-color: var(--color-mark);
+      top: -75px;
+      right: 30px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
   }
   & button{
     background-color: transparent;
@@ -54,4 +72,12 @@ footer{
     }
   }
 
+}
+@keyframes before-footer {
+  form{
+    top: 0;
+  }
+  to{
+    top: -100px;
+  }
 }
