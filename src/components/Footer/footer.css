@@ -1,12 +1,11 @@
 footer{
-  height: 100dvh;
+  height: 110dvh;
   background-color: var(--color-back0);
   color: #fff;
   display: flex;
   padding: 5% 5%;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 15%;
   position: relative;
   overflow: hidden;
 }
@@ -25,7 +24,12 @@ footer{
     position: relative;
     overflow: visible;
     &::after{
-      content: '';
+      content: 'Entre em Contato';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 13px;
       position: absolute;
       background-color: var(--color-mark);
       top: -75px;
