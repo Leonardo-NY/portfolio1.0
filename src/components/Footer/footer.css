@@ -1,14 +1,13 @@
 footer{
-  height: 100dvh;
+  height: 114dvh;
   background-color: var(--color-back0);
   color: #fff;
   display: flex;
   padding: 5% 5%;
-  padding-top: 20%;
+  padding-top: 10%;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
 }
 .contato{
   display: flex;
@@ -18,7 +17,7 @@ footer{
     font-weight: 500;
   }
   & hr{
-    margin: 20% 0 30%;
+    margin: 50px 0 100px;
     position: relative;
   }
   & #bolinha{
@@ -77,12 +76,4 @@ footer{
     }
   }
 
-}
-@keyframes before-footer {
-  form{
-    top: 0;
-  }
-  to{
-    top: -100px;
-  }
 }
