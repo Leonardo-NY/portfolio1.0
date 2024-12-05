@@ -3,7 +3,7 @@ header{
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 2%;
   height: 80px;
   position: sticky;
   top: 0;
@@ -14,6 +14,7 @@ header{
   animation: logo-remuve 1s ease-in forwards;
   animation-timeline: scroll();
   animation-range: cover 0% cover 20%;
+  margin-left: 2%;
 }
 #nav{
   display: flex;
@@ -68,17 +69,12 @@ ul{
   gap: 10px;
   align-items: center;
   background-image: none;
-  animation: back-menu-remuve .5s ease-in forwards;
+  width: 60px;
+  height : 60px;
+  border-radius: 50%;
+  animation: menu-scrool 1s  ease-out forwards ;
+  animation-timeline: scroll();
   position: relative;
-  &::before{
-    content: '';
-    position: absolute;
-    animation: menu-scrool 1s ease-in forwards;
-    border-radius: 50%;
-    translate: -.5px 2px;
-    animation-timeline: scroll();
-    animation-range: cover 0% cover 20%;
-  }
 }
 #menu{
   cursor: pointer;
@@ -86,6 +82,7 @@ ul{
   width: 30px;
   height: 7px;
   border: none;
+  translate: 0 -2px;
   border-top: 2px solid #fff;
   background-color: transparent;
   position: relative;
@@ -134,33 +131,15 @@ ul{
     scale: 1;
   }
 }
-@keyframes back-menu-remuve{
-  0%{
-    background-color: var(--color-mark);
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-  }
-  60%{
-    border-radius: 50%;
-    background-color: transparent;
-    height: 40px;
-    width: 40px;
-  }
-  to{
-    border-radius: 50%;
-    background-color: transparent;
-    height: 30px;
-    width: 30px;
-  }
-}
 @keyframes menu-scrool{
+  form{
+    height: 10px;
+    width: 10px;
+  }
   to{
     background-color: var(--color-back0);
     animation: back-menu .5s ease-in forwards;
     border: 1px solid var(--color-secundaria);
-    height: 200%;
-    width: 200%;
   }
 }
 @keyframes logo-remuve{
