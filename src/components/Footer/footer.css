@@ -4,6 +4,7 @@ footer{
   color: #fff;
   display: flex;
   padding: 5% 5%;
+  padding-top: 10%;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
