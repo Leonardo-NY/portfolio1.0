@@ -19,6 +19,7 @@ header{
 #nav{
   display: flex;
   position: relative;
+
 }
 ul{
   display: flex;
@@ -34,17 +35,18 @@ ul{
   height: 100dvh;
   width: 100vw;
   background-color: var(--color-back0);
-  & .li-navigation-mobile{
+  
+  .li-navigation-mobile{
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
-  & p{
+  p{
     color: var(--color-secundaria);
     font-weight: bold;
     font-size: 10px;
   }
-  & .navigtion-mobile-social{
+  .navigtion-mobile-social{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -56,7 +58,7 @@ ul{
       }
     }
   }
-  & a{
+  a{
     font-size: 3em;
     font-weight: 400;
     color: var(--color-text0);

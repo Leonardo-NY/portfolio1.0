@@ -2,7 +2,7 @@ import './footer.css'
 function Footer(){
   return(
     <>
-    <footer>
+    <footer id="contato">
       <section className='contato'>
         <h2>Vamos trabalhar juntos</h2>
         <hr id='bolinha'/>
