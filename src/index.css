@@ -6,6 +6,9 @@
   font-family: var(--font-normal);
   -webkit-tap-highlight-color: transparent;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root{
   --font-normal:"Montserrat", sans-serif;
   --color-text0: #fff;
