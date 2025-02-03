@@ -10,18 +10,17 @@
   --font-normal:"Montserrat", sans-serif;
   --color-text0: #fff;
   --color-text1: #000;
-  --color-back0: #101113;
-  --color-back1: #d2d3d4;
-  --color-main0: #c6c6e8;
-  --color-main1: #2b2b45;
+  --color-main0: #f5f4f4;
+  --color-back0: #000;
+  --color-back1: #fff;
   --color-mark: #1197f0;/*#11dcf0 */
   --color-secundaria: #808183;
 }
 body{
-  background-color: var(--color-main1);
+  background-color: var(--color-main0);
 }
 a, button{
-  color: var(--color-text0);
+  color: var(--color-text1);
   text-decoration: none;
   cursor: pointer;
 }

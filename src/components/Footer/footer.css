@@ -1,6 +1,6 @@
 footer{
   min-height: 110dvh;
-  background-color: var(--color-back0);
+  background-color: var(--color-back1);
   color: #fff;
   display: flex;
   padding: 5% 5%;
@@ -13,6 +13,7 @@ footer{
   display: flex;
   flex-direction: column;
   & h2{
+    color: var(--color-text1);
     font-size: 2.5em;
     font-weight: 500;
   }
@@ -70,7 +71,7 @@ footer{
     display: flex;
     justify-content: space-between;
     & p{
-      color: #fff;
+      color: var(--color-text1);
       font-size: 15px;
       font-weight: 400;
     }

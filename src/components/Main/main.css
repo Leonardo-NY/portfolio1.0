@@ -6,7 +6,7 @@ main{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: var(--color-main1);
+  background-color: var(--color-main0);
   color: var(--color-text1);
   overflow: hidden;
   & section{
