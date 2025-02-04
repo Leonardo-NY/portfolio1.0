@@ -132,7 +132,7 @@ ul{
 /* ANIMAÇÕES */
 @keyframes back-menu{
   from {
-    scale: .4;
+    scale: .2;
     border-radius: 50%;
   }
   to{
