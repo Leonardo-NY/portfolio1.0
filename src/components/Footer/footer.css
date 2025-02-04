@@ -22,7 +22,7 @@ footer{
     margin: 50px 0 100px;
     position: relative;
   }
-  & #bolinha{
+  .btnmove{
     position: relative;
     overflow: visible;
     &::after{

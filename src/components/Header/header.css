@@ -64,7 +64,7 @@ ul{
     color: var(--color-text0);
   }
 }
-.areaBtn{
+#areaBtn{
   cursor: pointer;
   z-index: 9;
   display: flex;
@@ -108,7 +108,7 @@ ul{
   & ul{
     right: 0;
   }
-  & .areaBtn{
+  #areaBtn{
     background-color: var(--color-mark);
     animation: back-menu .5s ease-in forwards;
     height: 60px;
