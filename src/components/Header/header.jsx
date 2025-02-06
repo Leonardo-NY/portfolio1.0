@@ -30,7 +30,7 @@ function Header(){
             </div>
           </li>
         </ul>
-        <div onClick={menu} id='areaBtn' className='btnmove'>
+        <div onClick={menu} id='areaBtn'  className='btnmove' >
           <button id='menu'></button>
         </div>
       </nav>
