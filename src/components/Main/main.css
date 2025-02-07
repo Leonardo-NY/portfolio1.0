@@ -91,7 +91,7 @@ main{
     animation-delay: 11s;
   }
 }
-h2{
+#h2main{
   position: absolute;
   bottom: 20px;
   left: 20px;

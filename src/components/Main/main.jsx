@@ -24,7 +24,7 @@ function Main(){
           <div></div>
         </h1>
       </section>
-      <h2>Desenvolvedor / Front-end</h2>
+      <h2 id='h2main'>Desenvolvedor / Front-end</h2>
     </main>
     </>
   )

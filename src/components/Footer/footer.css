@@ -1,6 +1,6 @@
 footer{
   min-height: 100dvh;
-  background-color: var(--color-back1);
+  background-color: var(--color-2);
   color: #fff;
   display: flex;
   padding: 5% 5%;
@@ -14,11 +14,11 @@ footer{
   flex-direction: column;
   padding-top: 20%;
   & h2{
-    color: var(--color-text1);
     font-size: 2.5em;
     font-weight: 500;
   }
   & hr{
+    background-color: var(--color-1);
     margin: 50px 0 100px;
     position: relative;
   }
@@ -33,19 +33,19 @@ footer{
       font-weight: bold;
       font-size: 13px;
       position: absolute;
-      background-color: var(--color-mark);
+      background-color: var(--color-3);
       top: -75px;
       right: 30px;
       width: 150px;
       height: 150px;
-      border-radius: 50%;
+      border-radius: 40%;
     }
   }
   & button{
     background-color: transparent;
     padding: 20px;
-    border: 1px solid var(--color-secundaria);
-    border-radius: 40px;
+    border: 1px solid var(--color-4);
+    border-radius: 20px;
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0;
@@ -55,6 +55,9 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  & hr{
+    background-color: var(--color-1);
+  }
   & p{
     color: var(--color-secundaria);
     font-size: 8px;
