@@ -1,6 +1,6 @@
 /* AREA MEIN */
 main{
-  min-height: 100dvh;
+  min-height: calc(100dvh - 90px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,42 +9,94 @@ main{
   background-color: var(--color-main0);
   color: var(--color-text1);
   overflow: hidden;
-  & section{
-    display: flex;
-    gap: 30px;
-    position: relative;
-    width: 100%;
-    & h1{
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      position: absolute;
-      left: 100%;
-      animation: line 22s linear infinite;
-      & div{
-        height: 15px;
-        border-radius: 2px;
-        width: 150px;
-        background-color: var(--color-text0);
-      }
-      & p{
-        font-weight: 500;
-        font-size: 7em;
-        color: var(--color-text0);
-      }
+
+}
+#text-back{
+  position: absolute;
+  left: 3vw;
+  z-index: 0;
+  color: var(--color-2);
+  font-size: 20vh;
+  font-weight: bold;
+
+}
+.bolinha-quadradas{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 35%;
+  border: 5px solid var(--color-4);
+}
+#bolinha-1{
+  left: 10px;
+  top: 30px;
+}
+#bolinha-2{
+  top: 0;
+  scale: 1.5;
+  left: 58%;
+}
+#bolinha-3{
+  left: 50%;
+  top: 40%;
+  scale: .7;
+  border: 5px solid var(--color-5);
+}
+#bolinha-4{
+  left: 26%;
+  scale: .9;
+  bottom: 20%;
+}
+#teste{
+  font-size: 2em;
+  z-index: 1;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 10vw;
+  & p{
+    & span{
+      font-size: 2em;
+      color: var(--color-3);
     }
-    & .dois{
-      animation-delay: 11s;
-    }
-  }
-  & h2{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 15px;
   }
 }
-
+#nome-carrocel{
+  display: flex;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+  & h1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 100%;
+    animation: line 22s linear infinite;
+    & div{
+      height: 15px;
+      border-radius: 2px;
+      width: 150px;
+      background-color: var(--color-3);
+    }
+    & p{
+      font-weight: 500;
+      font-size: 7em;
+      color: var(--color-text0);
+    }
+  }
+  & .dois{
+    animation-delay: 11s;
+  }
+}
+h2{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 15px;
+}
 @keyframes line{
   0%{
     transform: translateX(0);

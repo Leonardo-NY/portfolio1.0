@@ -6,7 +6,7 @@
   z-index: 1000;
   width: 200%;
   height: 200dvh;
-  background: var(--color-secundaria);
+  background: var(--color-5);
   display: block;
   animation: animation-intro 1s ease-in-out forwards 2s;
   

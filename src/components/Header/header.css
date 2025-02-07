@@ -34,7 +34,7 @@ ul{
   padding: 25% 7% 10%;
   height: 100dvh;
   width: 100vw;
-  background-color: var(--color-back0);
+  background-color: var(--color-0);
   
   .li-navigation-mobile{
     display: flex;
@@ -42,7 +42,7 @@ ul{
     gap: 25px;
   }
   p{
-    color: var(--color-secundaria);
+    color: var(--color-2);
     font-weight: bold;
     font-size: 10px;
   }
@@ -61,7 +61,6 @@ ul{
   a{
     font-size: 3em;
     font-weight: 400;
-    color: var(--color-text0);
   }
 }
 #areaBtn{
@@ -74,7 +73,7 @@ ul{
   background-image: none;
   width: 60px;
   height : 60px;
-  border-radius: 50%;
+  border-radius: 40%;
   animation: menu-scrool 1s  ease-out forwards ;
   animation-timeline: scroll();
   position: relative;
@@ -87,12 +86,10 @@ ul{
   height: 7px;
   border: none;
   translate: 0 -2px;
-  border-top: 2px solid var(--color-back0);
+  border-top: 2px solid var(--color-6);
   background-color: transparent;
   position: relative;
   transition: .4s;
-  animation: scrool-border-top .2s  ease-out forwards ;
-  animation-timeline: scroll();
   &::after{
     content: '';
     position: absolute;
@@ -100,9 +97,7 @@ ul{
     margin-top: 5px;
     width: 100%;
     height: 2px;
-    background-color: var(--color-back0);
-    animation: scrool-background-color .2s  ease-out forwards ;
-    animation-timeline: scroll();
+    background-color: var(--color-6);
   }
 }
 #nav.active{
@@ -110,7 +105,7 @@ ul{
     right: 0;
   }
   #areaBtn{
-    background-color: var(--color-mark);
+    background-color: var(--color-4);
     animation: back-menu .5s ease-in forwards;
     height: 60px;
     width: 60px;
@@ -118,41 +113,53 @@ ul{
       display: none;
     }
     & #menu{
-      border-top: 2px solid var(--color-back1);
       transition: .5s;
       rotate: 135deg;
-      translate: -1.5px -1.5px;
+      translate: -1.7px -1.7px;
       &::after{
         rotate: -450deg;
         translate: 0 -10px;
-        background-color: var(--color-back1);
       }
     }
   }
 }
 /* ANIMAÇÕES */
 @keyframes back-menu{
-  from {
+  0%{
     scale: .2;
     border-radius: 50%;
   }
-  to{
+  66%{
+    scale: 1;
+    border-radius: 50%;
+  }
+  78%{
+    scale: .9;
+    border-radius: 50%;
+  }
+  100%{
     border-radius: 50%;
     scale: 1;
   }
 }
 @keyframes menu-scrool{
-  form{
-    height: 10px;
-    width: 10px;
+  0%{
+    scale: .7;
   }
-  to{
-    background-color: var(--color-back0);
+  60%{
+    scale: 1;
+  }
+  70%{
+    scale: .9;
+  }
+  100%{
+    scale: .9;
+    background-color: var(--color-2);
     animation: back-menu .5s ease-in forwards;
-    border: 1px solid var(--color-secundaria);
+    border: 1px solid var(--color-3);
   }
 }
-@keyframes  scrool-border-top {
+/* @keyframes  scrool-border-top {
   to{
     border-top: 2px solid var(--color-back1);
   }
@@ -161,7 +168,7 @@ ul{
   to{
     background-color: var(--color-back1);
   }
-}
+} */
 @keyframes logo-remuve{
   to{
     opacity: 0;
