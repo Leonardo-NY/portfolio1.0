@@ -8,7 +8,7 @@ header{
   position: sticky;
   top: 0;
   align-items: center;
-  z-index: 999;
+  z-index: 99;
 }
 #logo{
   animation: logo-remuve 1s ease-in forwards;
@@ -68,7 +68,6 @@ ul{
   z-index: 9;
   display: flex;
   justify-content: center;
-  gap: 10px;
   align-items: center;
   background-image: none;
   width: 60px;

@@ -9,7 +9,6 @@ main{
   background-color: var(--color-main0);
   color: var(--color-text1);
   overflow: hidden;
-
 }
 #text-back{
   position: absolute;
@@ -29,24 +28,19 @@ main{
   border: 5px solid var(--color-4);
 }
 #bolinha-1{
-  left: 10px;
-  top: 30px;
+  animation: bolinha-1 1s forwards 2.7s;
 }
 #bolinha-2{
-  top: 0;
   scale: 1.5;
-  left: 58%;
+  animation: bolinha-2 1s forwards 2.5s;
 }
 #bolinha-3{
-  left: 50%;
-  top: 40%;
-  scale: .7;
   border: 5px solid var(--color-5);
+  animation: bolinha-3 1.5s  ease-out forwards 2.5s;
 }
 #bolinha-4{
-  left: 26%;
   scale: .9;
-  bottom: 20%;
+  animation: bolinha-4 .5s ease-in forwards 2.4s;
 }
 #teste{
   font-size: 2.6em;
@@ -96,6 +90,59 @@ main{
   bottom: 20px;
   left: 20px;
   font-size: 15px;
+}
+@keyframes bolinha-1 {
+  from{
+    left: 20%;
+    top: 100%;
+    rotate: 0deg;
+  }
+  to{
+    left: 10px;
+    top: 30px;
+    rotate: 540deg;
+  }
+}
+@keyframes bolinha-2 {
+  from{
+    left: 88%;
+    top: -20%;
+    rotate: 360deg;
+  }
+  to{
+    left: 58%;
+    top: 0;
+    rotate: 540deg;
+  }
+}
+@keyframes bolinha-3 {
+  0%{
+    
+    left: 90%;
+    top: 10%;
+    scale: .5;
+  }
+  90%{
+    left: 50%;
+    top: 40%;
+    scale: .5;
+  }
+  100%{
+    left: 50%;
+    top: 40%;
+    scale: .7;
+  }
+}
+@keyframes bolinha-4 {
+  0%{
+    left: -10px;
+    bottom: 0;
+  }
+  100%{
+    rotate: 540deg;
+    left: 26%;
+    bottom: 20%;
+  }
 }
 @keyframes line{
   0%{
