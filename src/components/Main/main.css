@@ -16,7 +16,7 @@ main{
   left: 3vw;
   z-index: 0;
   color: var(--color-2);
-  font-size: 16vh;
+  font-size: 7em;
   font-weight: bold;
 
 }
@@ -49,8 +49,7 @@ main{
   bottom: 20%;
 }
 #teste{
-  font-size: 2.3em;
-  line-height: 1.6em;
+  font-size: 2.6em;
   z-index: 1;
   width: 100%;
   font-weight: 500;
