@@ -16,7 +16,7 @@ main{
   left: 3vw;
   z-index: 0;
   color: var(--color-2);
-  font-size: 20vh;
+  font-size: 18vh;
   font-weight: bold;
 
 }
