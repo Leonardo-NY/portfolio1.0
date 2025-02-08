@@ -18,8 +18,9 @@
     content: '';
     font-size: 3em;
     z-index: 1002;
-    top: 45%;
-    left: 38%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     animation: animation-palavras  2s ease-in-out forwards;
   }
 }
@@ -37,11 +38,6 @@
 @keyframes animation-intro {
   100%{
     height: 0;
-  }
-}
-@keyframes animation-intro-p {
-  to{
-    top: -50%;
   }
 }
 @keyframes animation-palavras {
@@ -64,7 +60,7 @@
     content: '010100';
   }
   90%{
-    top:  45%;
+    top:  50%;
   }
   100%{
     top: -50%;
