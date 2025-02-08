@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <div id="anime-intro" outofocus>
-        <p>oi</p>
       </div>
+      <div id='anime-intro-p'><p>Hello</p></div>
       <section id="portfolio">
         <Header/>
         <Main/>
@@ -21,5 +21,4 @@ function App() {
     </>
   )
 }
-
 export default App

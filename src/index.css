@@ -28,6 +28,9 @@ a, button{
   cursor: pointer;
   color: var(--color-6);
 }
+a:hover{
+  color: #eb5659;
+}
 hr{
   border: none;
   width: 100%;

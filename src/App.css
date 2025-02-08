@@ -12,6 +12,14 @@
   
   clip-path: ellipse(50% 150% at 50% -50%);
 }
+#anime-intro-p{
+  position: absolute;
+  font-size: 3em;
+  z-index: 1002;
+  top: 45%;
+  left: 38%;
+  animation: animation-intro-p 1s ease-in-out forwards 2s;
+}
 #portfolio{
   animation: margin 1s ease-out forwards 2s;
 }
@@ -28,4 +36,8 @@
     height: 0;
   }
 }
-
+@keyframes animation-intro-p {
+  to{
+    top: -50%;
+  }
+}
