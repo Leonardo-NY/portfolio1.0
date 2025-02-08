@@ -13,12 +13,15 @@
   clip-path: ellipse(50% 150% at 50% -50%);
 }
 #anime-intro-p{
-  position: absolute;
-  font-size: 3em;
-  z-index: 1002;
-  top: 45%;
-  left: 38%;
-  animation: animation-intro-p 1s ease-in-out forwards 2s;
+  &::before{
+    position: absolute;
+    content: '';
+    font-size: 3em;
+    z-index: 1002;
+    top: 45%;
+    left: 38%;
+    animation: animation-palavras  2s ease-in-out forwards;
+  }
 }
 #portfolio{
   animation: margin 1s ease-out forwards 2s;
@@ -39,5 +42,32 @@
 @keyframes animation-intro-p {
   to{
     top: -50%;
+  }
+}
+@keyframes animation-palavras {
+  0%{
+    content: 'Hello';
+  }
+  10%{
+    content: 'Olá';
+  }
+  20%{
+    content: '010100';
+  }
+  30%{
+    content: '*&%>{';
+  }
+  40%{
+    content: '......';
+  }
+  60%{
+    content: '010100';
+  }
+  90%{
+    top:  45%;
+  }
+  100%{
+    top: -50%;
+    content: '010100';
   }
 }

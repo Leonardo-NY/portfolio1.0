@@ -11,7 +11,7 @@ function App() {
     <>
       <div id="anime-intro" outofocus>
       </div>
-      <div id='anime-intro-p'><p>Hello</p></div>
+      <div id='anime-intro-p'></div>
       <section id="portfolio">
         <Header/>
         <Main/>
